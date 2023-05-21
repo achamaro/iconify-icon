@@ -17,6 +17,9 @@
       "path": "examples/astro"
     },
     {
+      "path": "examples/astro-ssr"
+    },
+    {
       "path": "examples/next"
     },
     {
