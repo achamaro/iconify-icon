@@ -1,0 +1,37 @@
+{
+  "folders": [
+    {
+      "path": ".",
+      "name": "ROOT"
+    },
+    {
+      "path": "packages/core"
+    },
+    {
+      "path": "packages/vite-plugin-icon"
+    },
+    {
+      "path": "packages/webpack-plugin-icon"
+    },
+    {
+      "path": "examples/astro"
+    },
+    {
+      "path": "examples/next"
+    },
+    {
+      "path": "examples/react"
+    },
+    {
+      "path": "examples/svelte"
+    },
+    {
+      "path": "examples/vue"
+    }
+  ],
+  "settings": {
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}

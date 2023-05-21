@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "name": "core",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@types/node": "^20.1.4",
+    "eslint-config-custom": "workspace:*",
+    "iconify-icon": "^1.0.7",
+    "node-fetch": "^3.3.1",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "node-fetch": "^3.3.1"
+  },
+  "peerDependenciesMeta": {
+    "node-fetch": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "vitest": "^0.30.1"
+  }
+}
