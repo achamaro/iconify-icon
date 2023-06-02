@@ -1,0 +1,26 @@
+[package]
+name = "swc-plugin-icon"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "s"
+
+[dependencies]
+serde = "1"
+swc_core = { version = "0.76.*", features = ["ecma_plugin_transform"] }
+swc_ecma_parser = "0.134.11"
+indexmap = "1.9.3"
+serde_json = "1.0.96"
+convert_case = "0.6.0"
+testing = "0.33.12"
+swc_ecma_transforms_testing = "0.130.14"
+
+# .cargo/config defines few alias to build plugin.
+# cargo build-wasi generates wasm-wasi32 binary
+# cargo build-wasm32 generates wasm32-unknown-unknown binary.

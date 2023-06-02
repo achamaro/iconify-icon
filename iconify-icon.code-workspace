@@ -11,7 +11,10 @@
       "path": "packages/vite-plugin-icon"
     },
     {
-      "path": "packages/webpack-plugin-icon"
+      "path": "packages/next-plugin-icon"
+    },
+    {
+      "path": "packages/swc-plugin-icon"
     },
     {
       "path": "examples/astro"

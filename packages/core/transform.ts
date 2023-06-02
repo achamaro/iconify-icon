@@ -45,7 +45,7 @@ export function generateTransform(
  * @returns タグにマッチする正規表現
  */
 const generateTagReg = (tagName: string) =>
-  new RegExp(`<${tagName}\\s[^<>]*>(?:\\s*<\\/${tagName}>)?`, "gs");
+  new RegExp(`<${tagName}\\s[^<>]*>(?:.*?<\\/${tagName}>)?`, "gs");
 
 type IconParser = (substring: string) => string | undefined;
 

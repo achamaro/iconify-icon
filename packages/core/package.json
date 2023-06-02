@@ -25,6 +25,7 @@
     }
   },
   "devDependencies": {
+    "ts-dedent": "^2.2.0",
     "vitest": "^0.30.1"
   }
 }

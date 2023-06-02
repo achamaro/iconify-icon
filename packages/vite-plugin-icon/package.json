@@ -1,15 +1,16 @@
 {
   "name": "@achamaro/vite-plugin-icon",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Vite plugin for Iconify Icon",
   "keywords": [
     "vite-plugin",
     "iconify",
-    "icon"
+    "icon",
+    "vue",
+    "react",
+    "svelte",
+    "astro"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "type": "module",
   "author": "achamaro",
   "license": "MIT",
@@ -37,9 +38,6 @@
       "types": "./dist/astro-integration.d.ts",
       "import": "./dist/astro-integration.js",
       "require": "./dist/astro-integration.cjs"
-    },
-    "./types/jsx": {
-      "types": "./types/jsx.d.ts"
     }
   },
   "main": "./dist/index.cjs",

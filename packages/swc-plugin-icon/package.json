@@ -1,0 +1,26 @@
+{
+  "name": "@achamaro/swc-plugin-icon",
+  "version": "0.1.0",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "swc-plugin"
+  ],
+  "main": "swc_plugin_icon.wasm",
+  "scripts": {
+    "build:build": "cargo build-wasi --release",
+    "build:snip": "wasm-snip -o ./swc_plugin_icon.wasm ./target/wasm32-wasi/release/swc_plugin_icon.wasm",
+    "build": "npm run build:build && npm run build:snip"
+  },
+  "files": [
+    "swc_plugin_icon.wasm"
+  ],
+  "preferUnplugged": true,
+  "devDependencies": {
+    "@types/react": "^18.2.7",
+    "eslint-config-custom": "workspace:*",
+    "react": "^18.2.0",
+    "tsconfig": "workspace:*"
+  }
+}

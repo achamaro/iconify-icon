@@ -30,4 +30,19 @@ describe("transform", () => {
     expect(code).toBe(after);
     expect(icons).toEqual(["foo", "bar"]);
   });
+
+  it("replace", () => {
+    const before = dedent`
+            <i icon="simple-icons:iconify">
+              <Script id="hogehoge">{\`console.log("hogehoge");\`}</Script>
+            </i>`;
+    const after = dedent`
+            <i-con icon="simple-icons:iconify">
+              <Script id="hogehoge">{\`console.log("hogehoge");\`}</Script>
+            </i-con>`;
+
+    const [code, icons] = transform(before);
+    expect(icons).toEqual(["simple-icons:iconify"]);
+    expect(code).toBe(after);
+  });
 });

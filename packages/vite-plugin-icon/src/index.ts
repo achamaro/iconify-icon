@@ -1,8 +1,7 @@
 import { fetchIcon } from "core/fetch";
+import { generateTransform } from "core/transform";
 import fs from "fs/promises";
 import { createFilter, FilterPattern, PluginOption } from "vite";
-
-import { generateTransform } from "./transform";
 
 export interface Options {
   downloadDir?: string;
